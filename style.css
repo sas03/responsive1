@@ -1,0 +1,129 @@
+body{
+	background: black;
+}
+
+ul{
+	list-style: none;
+	text-align: center;
+	background-color: grey;
+	padding: 10px;
+}
+
+ul > li{
+	display: inline;
+	background-color: purple;
+	color: white;
+}
+
+a{
+	color: white;
+}
+
+p{
+	text-align: center;
+	color: red;
+	font-size: 30px;
+	text-decoration-line: underline;
+}
+
+#navbar{
+	background: skyblue;
+	padding: 10px;
+	margin: 5px;
+}
+
+#img1{
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+}
+
+#header{
+	text-align: center;
+	width: 100%;
+}
+
+#left{
+	float: left;
+	margin-right: 5px;
+	background-color: purple;
+}
+
+#right{
+	float: right;
+	margin-right: 5px;
+	background-color: purple;
+}
+
+#container{
+	text-align: center;
+	width: 100%;
+}
+
+#footer{
+	text-align: center;
+}
+
+#img2{
+	margin: 10px;
+}
+
+img{
+	width: 960px;
+}
+
+/*Tablets and so on*/
+@media screen and (max-width:959px){
+	img{
+		width: 100%;
+	}
+
+	ul{
+		text-align: center;
+	}
+
+	ul > li{
+		clear: both;
+		display: block;
+		margin-bottom: 5px;
+		background-color: black;
+	}
+
+	a{
+		color: white;
+		text-decoration-line: none;
+	}	
+	#navbar{
+		text-align: center;
+	}
+
+	#left{
+		float: none;
+		margin-right: 0px;
+		background-color: purple;
+	}
+
+	#right{
+		float: none;
+		margin-right: 0px;
+		background-color: gold;
+	}	
+}
+
+/*Stays the same size so that you can maneuver with the screen for better word visibility*/
+@media screen and (max-width:320px){
+	#header{
+		width: 320px;
+	}
+
+	#container{
+		width: 320px;
+	}
+	
+	img{
+		width: 320px;
+	}
+	#footer{
+		width: 320px;
+	}
+}
